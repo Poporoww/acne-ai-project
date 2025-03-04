@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="NotSibling">
+            <Button
+                android:id="@+id/LoginHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#14cebd"
+                android:fontFamily="@font/mitr_regular"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="12pt"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                app:cardCornerRadius="100dp"
+                >
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/gradient_bg"
+                    />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="200dp"
+                    >
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@mipmap/logo"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"/>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="305dp"
+                android:text="Welcome to\nAcne Analyst"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_semibold"
+                android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="385dp"
+                android:text="เราจะวิเคราะห์สิวบนใบหน้าของคุณ\nพร้อมให้คำปรึกษา"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="8pt"/>
+
+            <Button
+            android:id="@+id/ggform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="คำถามประเมินเรื่องสิว"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_light"
+                android:layout_marginTop="445dp"/>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="500dp"
+
+                android:layout_marginStart="60dp"
+                >
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_24px"
+                    android:onClick="takePhoto"
+                    app:tint="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take a photo"
+                    android:textSize="8pt"
+                    android:layout_marginTop="100dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:fontFamily="@font/mitr_regular"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="500dp"
+                android:layout_marginEnd="60dp"
+                >
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/circle"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_24px"
+                    android:onClick="selectImage"
+                    app:tint="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select an Image"
+                    android:textSize="8pt"
+                    android:layout_marginTop="100dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:fontFamily="@font/mitr_regular"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/bmi_text_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI : "
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="12pt"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="650dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="140dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/bmi_num_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="12pt"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="650dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="200dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/bmi_show_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="11pt"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="685dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/bmi_advice_main"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:fontFamily="@font/mitr_light"
+                android:textSize="8pt"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="720dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/saved_search_24px"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ประวัติ"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mitr_light"
+                android:layout_marginTop="30dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/me"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="250dp"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/account_circle_24px"
+                app:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="คุณ"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

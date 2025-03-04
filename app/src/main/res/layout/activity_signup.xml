@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="22pt"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_semibold"
+            android:text="SIGN UP"/>
+
+        <EditText
+            android:id="@+id/new_username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textSize="10pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="190dp"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="@color/black"
+            android:hint="Username"/>
+
+        <EditText
+            android:id="@+id/new_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textSize="10pt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="280dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_light"
+            android:hint="Password"/>
+
+
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Sign up"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="380dp"/>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/haveuser"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text="Login"
+        android:textSize="12pt"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/mitr_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

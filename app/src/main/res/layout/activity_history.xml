@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/history"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".HistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ประวัติการวิเคราะห์"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_regular"
+                android:textStyle="bold"
+                android:textSize="14pt"
+                android:padding="10dp"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <ListView
+            android:id="@+id/historylistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="120dp"
+
+            tools:ignore="NestedScrolling" />
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ประวัติส่วนตัว"
+            android:textSize="16pt"
+            app:cardBackgroundColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:padding="20dp"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@color/black"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ชื่อ : "
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/showfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="90dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="สกุล : "
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/showsurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="90dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="310dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="อายุ : "
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/showage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="90dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="น้ำหนัก : "
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/showweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="180dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="470dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ส่วนสูง : "
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/showheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="180dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="550dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI : "
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/showbmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:textColor="#ff0000"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginStart="200dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/re_insert_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="620dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/mitr_light"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:text="แก้ไข"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/mitr_light"
+        android:backgroundTint="@color/black"
+        android:text="Logout"/>
+</RelativeLayout>
