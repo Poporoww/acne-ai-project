@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradient_background"
+    tools:context=".LoginActivity"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="18pt"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            />
+
+        <!-- Enter Username -->
+        <EditText
+            android:id="@+id/loginUsername"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:hint="Username"
+            android:textSize="10pt"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="@color/black"/>
+
+        <!-- Enter Password -->
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="230dp"
+            android:hint="Password"
+            android:textSize="10pt"
+            android:fontFamily="@font/mitr_light"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_marginTop="320dp"
+            android:backgroundTint="#00008B"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Don't have account ? -->
+        <TextView
+            android:id="@+id/redirectSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:text="Don't have an account ?  SignUp"
+            android:layout_marginTop="420dp"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

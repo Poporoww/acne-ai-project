@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992623738986",
+    "project_id": "acnedetector-6874e",
+    "storage_bucket": "acnedetector-6874e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992623738986:android:466330b2ed8c5ebbdb4a13",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz4BZ3H26QkaAh5JOIZG3o4N0sQ8GPw4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

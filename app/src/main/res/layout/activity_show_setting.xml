@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradient_background"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ประวัติส่วนตัว"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:textSize="16pt"
+        android:textColor="@color/black"
+        android:fontFamily="@font/mitr_regular"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firstname : "
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="@color/black"
+            android:layout_marginStart="105dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="195dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surname : "
+            android:textSize="7pt"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/surName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:fontFamily="@font/mitr_light"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginStart="105dp"/>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="265dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : "
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:fontFamily="@font/mitr_light"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginStart="65dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="years old"
+            android:textSize="7pt"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="255dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="335dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight : "
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/Weight"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:fontFamily="@font/mitr_light"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginStart="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="@color/black"
+            android:layout_marginStart="300dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="405dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height : "
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/Height"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:fontFamily="@font/mitr_light"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginStart="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="@color/black"
+            android:layout_marginStart="300dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="475dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bmi : "
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:id="@+id/Bmi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:fontFamily="@font/mitr_light"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginStart="80dp"/>
+
+        <TextView
+            android:id="@+id/bmiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="7pt"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/mitr_light"
+            android:textColor="#FF0000"
+            android:layout_marginStart="200dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:text="LogOut"
+        android:textSize="8pt"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#00008B"
+        android:fontFamily="@font/mitr_medium"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/EditBtn"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:text="Edit"
+        android:textSize="8pt"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#00008B"
+        android:fontFamily="@font/mitr_medium"
+        android:textColor="@color/white"
+        android:layout_marginBottom="100dp"/>
+
+</RelativeLayout>

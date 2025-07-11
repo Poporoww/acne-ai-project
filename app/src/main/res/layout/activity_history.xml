@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradient_background"
+    tools:context=".HistoryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="30dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ประวัติการวิเคราะห์"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="13pt"
+        android:fontFamily="@font/mitr_regular"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    </androidx.cardview.widget.CardView>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/PopUpChooser"
+        android:layout_width="300dp"
+        android:layout_height="330dp"
+        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture or Select an Image"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:fontFamily="@font/mitr_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--camera-->
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Camera"
+            android:textSize="8pt"
+            android:backgroundTint="#0059FF"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- gallery -->
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Gallery"
+            android:backgroundTint="#0059FF"
+            android:textSize="8pt"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_marginTop="155dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- close -->
+        <Button
+            android:id="@+id/closeFrame"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Close"
+            android:backgroundTint="#E41B17"
+            android:textSize="8pt"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="120dp"
+        android:background="@drawable/gradient_background"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/LoginHomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00008B"
+                android:textColor="@color/white"
+                android:textSize="8pt"
+                android:fontFamily="@font/mitr_regular"
+                android:text="Login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/helloUsername"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_light"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentTop="true"
+                android:textSize="10pt"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Logo Application -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                app:cardCornerRadius="100dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="90dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/logo"/>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Welcome Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to\nAcne Analyst"
+                android:textSize="14pt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mitr_regular"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="305dp"
+                />
+
+            <!-- Detail Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="เราจะวิเคราะห์สิวบนใบหน้าของคุณ\nพร้อมให้คำปรึกษา"
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:fontFamily="@font/mitr_light"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="395dp"
+                />
+
+            <!-- Acne Question -->
+            <Button
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="คำถามประเมินเรื่องสิว"
+                android:textSize="8pt"
+                android:textColor="@color/white"
+                android:fontFamily="@font/mitr_light"
+                android:backgroundTint="#00008B"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="475dp"
+                />
+
+            <!-- BMI Text -->
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="550dp"
+                android:fontFamily="@font/mitr_light"
+                android:textSize="10pt"
+                />
+
+            <TextView
+                android:id="@+id/bmiText"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/mitr_light"
+                android:layout_marginTop="620dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Nevigation Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <!-- History -->
+        <RelativeLayout
+            android:id="@+id/historyButton"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/search"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ประวัติ"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="7.5pt"
+                android:fontFamily="@font/mitr_light"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+        <!-- About Me -->
+        <RelativeLayout
+            android:id="@+id/meButton"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/user"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/mitr_light"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ฉัน"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="7.5pt"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <!-- capture or select -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="120dp">
+        <ImageView
+            android:id="@+id/pickImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/add"
+            />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

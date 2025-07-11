@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fitsSystemWindows="true"
+    tools:context=".DetailHistoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="260dp"
+            android:id="@+id/hisPic"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hisDate"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/mitr_light"
+            android:layout_marginTop="320dp"/>
+
+        <!-- Show acne that is detected -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ผลลัพธ์"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="6.5pt"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="350dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="400dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:id="@+id/hisLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result..."
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:fontFamily="@font/mitr_light"
+                android:textSize="7pt"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Show advice -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คำแนะนำ"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="6.5pt"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="470dp"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/mitr_regular"
+            android:layout_marginStart="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="520dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            >
+
+            <TextView
+                android:id="@+id/hisAdvice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Wait a moment..."
+                android:textColor="@color/black"
+                app:cardBackgroundColor="@color/white"
+                android:fontFamily="@font/mitr_light"
+                android:textSize="7pt" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
