@@ -1,4 +1,4 @@
-AcneAI: Facial Acne Detection and Consultation App
+# Facial Acne Detection and Consultation App
 
 This project is an Android application that detects types of facial acne and provides personalized skincare advice using artificial intelligence.
 
