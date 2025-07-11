@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
         // gg form acne question
         Question.setOnClickListener(v -> {
-            String url = "";
+            String url = "https://forms.gle/jB2YKhmtHAnnBiQa9";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent);
         });
