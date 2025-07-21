@@ -40,15 +40,21 @@ public class SignupActivity extends AppCompatActivity {
                 String username = signupUsername.getText().toString();
                 String password = signupPassword.getText().toString();
 
-                HelperClass helperClass = new HelperClass(password);
-                reference.child(username).setValue(helperClass);
+                if(username.isEmpty()) {
+                    signupUsername.setError("Username cannot be empty");
+                } else if(password.isEmpty()) {
+                    signupPassword.setError("Password cannot be empty");
+                } else {
+                    HelperClass helperClass = new HelperClass(password);
+                    reference.child(username).setValue(helperClass);
 
-                Toast.makeText(SignupActivity.this, "SignUp successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupActivity.this, "SignUp successfully", Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(SignupActivity.this, SettingActivity.class);
-                intent.putExtra("from", "signup");
-                intent.putExtra("username", username);
-                startActivity(intent);
+                    Intent intent = new Intent(SignupActivity.this, SettingActivity.class);
+                    intent.putExtra("from", "signup");
+                    intent.putExtra("username", username);
+                    startActivity(intent);
+                }
             }
         });
 

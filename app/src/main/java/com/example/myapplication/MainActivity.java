@@ -136,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
         // gg form acne question
         Question.setOnClickListener(v -> {
-            String url = "";
+            String url = "https://forms.gle/jB2YKhmtHAnnBiQa9";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent);
         });
@@ -210,7 +210,10 @@ public class MainActivity extends AppCompatActivity {
 
     Uri picUri;
     public void captureImage() {
-        File file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "capture_image.jpg");
+        File file = null;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
+            file = new File(getExternalFilesDir(Environment.DIRECTORY_PICTURES), "capture_image.jpg");
+        }
         picUri = FileProvider.getUriForFile(this, getPackageName() + ".fileprovider", file);
 
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -236,6 +239,7 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == REQUEST_IMAGE_CAPTURE && picUri != null) {
             Intent sendResult = new Intent(MainActivity.this, ResultActivity.class);
             sendResult.putExtra("imageUri", picUri.toString());
+            sendResult.putExtra("username", Username);
             startActivity(sendResult);
         }
     }

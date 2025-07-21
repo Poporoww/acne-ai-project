@@ -12,6 +12,7 @@ import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,6 +59,8 @@ public class ResultActivity extends AppCompatActivity {
     String advice;
     String timestamp;
 
+    long startTime, endTime;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +83,11 @@ public class ResultActivity extends AppCompatActivity {
         textPaint.setStyle(Paint.Style.FILL);
         textPaint.setColor(Color.GREEN);
 
+
+
         String ImageStr = getIntent().getStringExtra("imageUri");
+
+        startTime  = System.currentTimeMillis();
         Uri ImageUri;
         if (ImageStr != null) {
             ImageUri = Uri.parse(ImageStr);
@@ -135,6 +142,7 @@ public class ResultActivity extends AppCompatActivity {
     private void saveToDatabase(Uri uriPic, StringBuilder labels, String advice) {
 
         String username = getIntent().getStringExtra("username");
+      //  Log.d("ResultActivity", "username: " + username);
 
         if(username != null) {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -143,14 +151,16 @@ public class ResultActivity extends AppCompatActivity {
             HistoryHelper historyHelper = new HistoryHelper(detectedUriPic.toString(), labelBuilder.toString(), advice);
 
             reference.child("history").child(timestamp).setValue(historyHelper);
-
+            endTime = System.currentTimeMillis();
+            long latency = endTime - startTime;
+            Log.d("Performance", "Latency = " + latency + "ms");
         }
     }
 
     // get advice from gemini [ function ]
     private void getAdviceFromGemini(ArrayList<String> detectedLabels) {
         String prompt = "ฉันพบสิ่งเหล่านี้บนใบหน้าของฉัน: " + String.join(", ", detectedLabels) +
-                " คุณช่วยให้คำแนะนำเกี่ยวกับวิธีดูแลผิวและรักษาสิวให้ฉันได้ไหม? กรุณาตอบกระชับและไม่อยู่ในรูปแบบ Markdown";
+                " คุณช่วยให้คำแนะนำเกี่ยวกับวิธีดูแลผิวและรักษาสิวให้ฉันได้ไหม? ขอสั้นกระชับ";
 
         GeminiRequest request = new GeminiRequest(
                 List.of(new Content(List.of(new Part(prompt))))

@@ -37,7 +37,7 @@ public class ShowSettingActivity extends AppCompatActivity {
         TextView Height = findViewById(R.id.Height);
         TextView Bmi = findViewById(R.id.Bmi);
         TextView bmiText = findViewById(R.id.bmiText);
-        Button editBtn = findViewById(R.id.EditBtn);
+        Button editBtn = findViewById(R.id.EditBtn), logoutBtn = findViewById(R.id.LogoutBtn);
 
         if(username != null) {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -88,6 +88,13 @@ public class ShowSettingActivity extends AppCompatActivity {
             intent.putExtra("from", "show");
             intent.putExtra("username", username);
             startActivity(intent);
+        });
+
+        logoutBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(ShowSettingActivity.this, MainActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // ล้าง stack ของ activity ทั้งหมด
+            startActivity(intent);
+            finish();
         });
     }
 }
