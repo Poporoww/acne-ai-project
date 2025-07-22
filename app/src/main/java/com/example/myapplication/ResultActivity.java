@@ -55,7 +55,7 @@ public class ResultActivity extends AppCompatActivity {
     Uri detectedUriPic;
 
     // Gemini Api Key
-    private static final String API_KEY = "AIzaSyBXyT5YY6LL0TePXcpu22SsydBU_SJPTa4";
+    private static final String API_KEY = "YOUR_API_KEY";
     String advice;
     String timestamp;
 
